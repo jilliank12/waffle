@@ -65,11 +65,77 @@ public class CircularList {
 
     }
 
+    //insert at the end
+    //find a node right before the headnode
+    void insertAtEnd(CircularList headNode, CircularList nodeToInsert) {
+        CircularList currentNode = headNode;
+        while (currentNode.getNext() != headNode) {
+            currentNode.setNext(currentNode.getNext());
+        }
+        nodeToInsert.setNext(nodeToInsert);
+        if (headNode == null) {
+            headNode = nodeToInsert;
+        } else {
+            nodeToInsert.setNext(headNode);
+            currentNode.setNext(nodeToInsert);
+        }
+    }
 
+    //insert at head
+    // first, let the nodeToInsert point to itself
+    // then let it point to the head, and use the getNext function to get the node right before the headnode
+    // let the pointer of the last node to point at nodeToInsert
+    void insertAtHead(CircularList headNode, CircularList nodeToInsert) {
+        CircularList currentNode = headNode;
+        while (currentNode.getNext() != headNode) {
+            currentNode.setNext(currentNode.getNext());
+        }
+        //set a pointer to itself
+        nodeToInsert.setNext(nodeToInsert);
+        if (headNode == null) {
+            headNode = nodeToInsert;
+        } else {
+            nodeToInsert.setNext(headNode);
+            currentNode.setNext(nodeToInsert);
+            headNode = nodeToInsert;
+        }
 
+    }
 
+    //find the last node
+    //find the node before the last node, and let it point to head
+    void deleteLastNode(CircularList headNode) {
+        CircularList temp = headNode;
+        CircularList currentNode = headNode;
+        //when the list is empty
+        if (headNode == null) {
+            System.out.println("list is empty");
+            return;
+        }
+        while (currentNode.getNext() != headNode) {
+            temp = currentNode;
+            currentNode = currentNode.getNext();
+        }
+        currentNode = null;
+        return;
+    }
 
+    void deleteHead(CircularList headNode) {
+        CircularList temp = headNode;
+        CircularList currentNode = headNode;
+        if (headNode == null) {
+            System.out.println("List is empty");
+            return;
+        }
+        while (currentNode.getNext() != headNode) {
+            currentNode.setNext(currentNode.getNext());
+        }
+        currentNode.setNext(headNode.getNext());
+        headNode = headNode.getNext();
+        temp = null;
+        return;
 
+    }
 
 
 }
