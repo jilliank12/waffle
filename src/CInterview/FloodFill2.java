@@ -39,99 +39,85 @@ import java.util.List;
     *
     * */
 
-public class FloodFill {
+public class FloodFill2 {
 
     //hashmap to store a vertex and its points
 
     public static void main(String[] args) {
-        FloodFill floodFill = new FloodFill();
+        FloodFill2 floodFill = new FloodFill2();
 
         int map[][] = {{1, 1, 0, 1, 0, 1},
-                       {1, 1, 1, 1, 0, 1},
-                       {0, 0, 0, 0, 1, 1},
-                       {1, 0, 1, 0, 1, 0}
+                {1, 1, 1, 1, 0, 1},
+                {0, 0, 0, 0, 1, 1},
+                {1, 0, 1, 0, 1, 0}
 
         };
+        floodFill.countVertex(map);
+
+    }
+
+    void countVertex(int[][] map) {
+        int count = 0;
         int mapLength = map.length;
         int mapWidth = mapLength > 0? map[0].length : 0;
         for (int i = 0; i < mapLength; i++) {
             for (int j = 0; j < mapWidth; j++) {
-                connected(i, j, map);
+                int alphabet = 65;
+                alphabet += count;
+                List<Pair<Integer, Integer>> points = new ArrayList<Pair<Integer, Integer>>();
+                if (connected(i, j, mapLength, mapWidth, map, false, points)) {
+                    System.out.print((char) alphabet + " : ");
+                    count++;
+                    printList(points);
+                    System.out.println();
+                }
             }
         }
-
-//        floodFill.countVertex(map);
-
     }
 
-//    void countVertex(int[][] map) {
-//        int count = 0;
-//        int mapLength = map.length;
-//        int mapWidth = mapLength > 0? map[0].length : 0;
-//        for (int i = 0; i < mapLength; i++) {
-//            for (int j = 0; j < mapWidth; j++) {
-////                HashMap<Integer, List<CInterview.Pair<Integer, Integer>>> result = new HashMap();
-////                List<Pair<Integer, Integer>> points = new ArrayList<Pair<Integer, Integer>>();
-//                int alphabet = 65;
-//                alphabet += count;
-//                if (connected(i, j, map)) {
-//                    count++;
-//                    System.out.println();
-//                    System.out.println((char) alphabet + " : ");
-////                    storeVector(result, points, count);
-////                    printList(points);
-//                }
-//            }
-//        }
-//    }
-
     //recursive step to find 1s and turning them into -1 once it's visited
-    static void connected(int row, int col, int[][] map) {
-        int mapLength = map.length;
-        int mapWidth = mapLength > 0? map[0].length : 0;
+    boolean connected(int row, int col, int mapLength, int mapWidth, int[][] map, boolean isRoot, List<Pair<Integer, Integer>> points) {
         if (!isValidCell(row, col, mapLength, mapWidth)) {
-            return;
+            return false;
         }
         if (map[row][col] == 1) {
             //assuming -1 is safer to use than switching to 0
             map[row][col] = -1;
             //checking to see if there are any adjacent 1s
-            connected(row, col - 1, map);
-            connected(row + 1, col, map);
-            connected(row, col + 1, map);
-            connected(row - 1, col, map);
-//            points.add(new CInterview.Pair(row, col));
-            System.out.print("(" + row + ", " + col + ")");
+            boolean hasAdjacent = false;
+            connected(row, col - 1, mapLength, mapWidth, map, false, points);
+            connected(row + 1, col, mapLength, mapWidth, map, false, points);
+            connected(row, col + 1, mapLength, mapWidth, map, false, points);
+            connected(row - 1, col, mapLength, mapWidth, map, false, points);
+            points.add(new CInterview.Pair(row, col));
+//            System.out.print("(" + row + ", " + col + ")");
+
+            //checks NESW values whether they're 1 or -1
+            if (isRoot) {
+                return hasAdjacent;
+            } else {
+                return true;
+            }
         }
+        return false;
     }
 
     //checks if the cell is within the matrix
-    static boolean isValidCell(int row, int col, int mapLength, int mapWidth) {
+    boolean isValidCell(int row, int col, int mapLength, int mapWidth) {
         if (row >= mapLength || row < 0 || col >= mapWidth || col < 0) {
             return false;
         }
         return true;
     }
 
-//    //print the list
-//    void printList(List<CInterview.Pair<Integer, Integer>> points) {
-//        while (points.size() > 0) {
-//            for (int i = 0; i < points.size(); i++) {
-//                System.out.print("(" + points.get(i).getKey() + ", " + points.get(i).getValue() + ")");
-//            }
+    //print the list
+    void printList(List<CInterview.Pair<Integer, Integer>> points) {
+//        while (points.size() != 0) {
+            for (int i = 0; i < points.size(); i++) {
+                System.out.print("(" + points.get(i).getKey() + ", " + points.get(i).getValue() + ")");
+            }
 //        }
-//    }
-//
-//    //stores the hashmap and the list of points
-//    void storeVector(HashMap<Integer, List<CInterview.Pair<Integer, Integer>>> result, List<CInterview.Pair<Integer, Integer>> points, int count) {
-//        int alphabet = 64;
-//        alphabet += count;
-//        result.put(alphabet, points);
-//        System.out.print((char)alphabet + " : ");
-//        printList(points);
-//    }
-
-
+    }
 
 
 }

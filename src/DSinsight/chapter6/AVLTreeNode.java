@@ -41,4 +41,12 @@ public class AVLTreeNode {
         this.right = right;
     }
 
+    public int Height(AVLTreeNode root) {
+        if (root == null) {
+            return -1;
+        } else {
+            return root.getHeight();
+        }
+    }
+
 }

@@ -12,6 +12,7 @@ public class GroupSum {
         nums[2] = 2;
         System.out.println(groupSum6(0, nums, 7));
 
+        System.out.println(groupSum0(0, nums, 7));
     }
 
     /*
@@ -25,7 +26,7 @@ public class GroupSum {
     public static boolean groupSum6(int index, int[] nums, int target) {
         //array is shorter than the given index
         if (index >= nums.length) {
-            return (target == 0);
+            return target == 0;
         }
 
         if (groupSum6(index+1, nums, target-nums[index])) {
@@ -35,5 +36,16 @@ public class GroupSum {
             return true;
         }
         return false;
+    }
+
+    public static boolean groupSum0(int index, int[] nums, int target) {
+        if (index >= nums.length) {
+            return target == 0;
+        }
+        if (nums[index] == 6) {
+            return groupSum0(index + 1, nums, target - 6);
+        } else {
+            return groupSum0(index + 1, nums, target - nums[index]) || groupSum0(index + 1, nums, target);
+        }
     }
 }
