@@ -1,58 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="187f9179-30ff-457c-ab40-13958ae5b7c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java/CodingInterview/BalancedParentheses.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java/CodingInterview/FindDuplicates.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java/CodingInterview/IsomorphicStrings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java/CodingInterview/LongestCommonPrefix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java/CodingInterview/ZigZagConversion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java/JavaRevisited/Anagram.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java/JavaRevisited/PrintRecursion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Java/tdd/StringCalculator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scala/S99/FindNthElement.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Scala/S99/Penultimate.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Java/tddtest/StringCalculatorTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CodingInterview/IsomorphicStrings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/JavaRevisited/Anagram.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scala/Throws.scala" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CInterview/FloodFill.java" afterPath="$PROJECT_DIR$/src/Java/CInterview/FloodFill.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CInterview/FloodFill2.java" afterPath="$PROJECT_DIR$/src/Java/CInterview/FloodFill2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CInterview/GroupSum.java" afterPath="$PROJECT_DIR$/src/Java/CInterview/GroupSum.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CInterview/Pair.java" afterPath="$PROJECT_DIR$/src/Java/CInterview/Pair.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CodingInterview/RotateArray.java" afterPath="$PROJECT_DIR$/src/Java/CodingInterview/RotateArray.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter10/BubbleSort.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter10/BubbleSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter3/CircularList.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter3/CircularList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter3/DLLNode.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter3/DLLNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter3/ListNode.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter3/ListNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter4/ArrayStack.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter4/ArrayStack.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter4/DynamicArrayStack.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter4/DynamicArrayStack.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter4/StackList.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter4/StackList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter5/ArrayQueue.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter5/ArrayQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter5/DArrayQueue.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter5/DArrayQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter5/LinkedQueue.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter5/LinkedQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter5/Solution.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter5/Solution.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/AVLTreeNode.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/AVLTreeNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/BinarySearchTreeNode.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/BinarySearchTreeNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/BinaryTreeNode.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/BinaryTreeNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/InOrderIterative.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/InOrderIterative.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/InOrderRecursive.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/InOrderRecursive.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/LevelOrder.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/LevelOrder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/PostorderIterative.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/PostorderIterative.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/PostorderRecursive.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/PostorderRecursive.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/PreorderIterative.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/PreorderIterative.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter6/PreorderRecursive.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter6/PreorderRecursive.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/DSinsight/chapter9/Graph.java" afterPath="$PROJECT_DIR$/src/Java/DSinsight/chapter9/Graph.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JavaRevisited/IsPalindrome.java" afterPath="$PROJECT_DIR$/src/Java/JavaRevisited/IsPalindrome.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JavaRevisited/LongestSequence.java" afterPath="$PROJECT_DIR$/src/Java/JavaRevisited/LongestSequence.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/easy/ZigZagComparison.java" afterPath="$PROJECT_DIR$/src/Java/app/easy/ZigZagComparison.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/InterviewPrep/JavaRevisited/Anagram.class" afterPath="$PROJECT_DIR$/out/production/InterviewPrep/JavaRevisited/Anagram.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InterviewPrep.iml" afterPath="$PROJECT_DIR$/InterviewPrep.iml" />
-    </list>
+    <list default="true" id="187f9179-30ff-457c-ab40-13958ae5b7c3" name="Default" comment="" />
     <ignored path="InterviewPrep.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -881,10 +830,10 @@
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15783133" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32409638" sideWeight="0.5114449" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34334764" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32505175" sideWeight="0.4913886" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32409638" sideWeight="0.48855507" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19027181" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
