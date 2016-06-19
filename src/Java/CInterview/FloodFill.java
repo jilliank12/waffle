@@ -64,27 +64,6 @@ public class FloodFill {
 
     }
 
-//    void countVertex(int[][] map) {
-//        int count = 0;
-//        int mapLength = map.length;
-//        int mapWidth = mapLength > 0? map[0].length : 0;
-//        for (int i = 0; i < mapLength; i++) {
-//            for (int j = 0; j < mapWidth; j++) {
-////                HashMap<Integer, List<CInterview.Pair<Integer, Integer>>> result = new HashMap();
-////                List<Pair<Integer, Integer>> points = new ArrayList<Pair<Integer, Integer>>();
-//                int alphabet = 65;
-//                alphabet += count;
-//                if (connected(i, j, map)) {
-//                    count++;
-//                    System.out.println();
-//                    System.out.println((char) alphabet + " : ");
-////                    storeVector(result, points, count);
-////                    printList(points);
-//                }
-//            }
-//        }
-//    }
-
     //recursive step to find 1s and turning them into -1 once it's visited
     static void connected(int row, int col, int[][] map) {
         int mapLength = map.length;
@@ -112,25 +91,6 @@ public class FloodFill {
         }
         return true;
     }
-
-//    //print the list
-//    void printList(List<CInterview.Pair<Integer, Integer>> points) {
-//        while (points.size() > 0) {
-//            for (int i = 0; i < points.size(); i++) {
-//                System.out.print("(" + points.get(i).getKey() + ", " + points.get(i).getValue() + ")");
-//            }
-//        }
-//    }
-//
-//    //stores the hashmap and the list of points
-//    void storeVector(HashMap<Integer, List<CInterview.Pair<Integer, Integer>>> result, List<CInterview.Pair<Integer, Integer>> points, int count) {
-//        int alphabet = 64;
-//        alphabet += count;
-//        result.put(alphabet, points);
-//        System.out.print((char)alphabet + " : ");
-//        printList(points);
-//    }
-
 
 
 
